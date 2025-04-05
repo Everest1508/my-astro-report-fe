@@ -135,7 +135,7 @@ function Home() {
 
     setChartData(mockChartData);
     setReport(mockReport);
-    navigate('/result', { state: { chartData, report } });
+    navigate('/result', { state: { chartData: mockChartData, report: mockReport } });
   };
 
   return (
