@@ -7,10 +7,10 @@ import { useNavigate } from 'react-router-dom';
 function Home() {
   const [chartData, setChartData] = useState<ChartData | null>(null);
   const [report, setReport] = useState<AstrologicalReport | null>(null);
+  const navigate = useNavigate();
 
   const handleSubmit = async () => {
     // This is a mock response. In a real app, you would call an astrology API
-    const navigate = useNavigate();
     const mockChartData: ChartData = {
       ascendant: "Libra",
       houses: [
